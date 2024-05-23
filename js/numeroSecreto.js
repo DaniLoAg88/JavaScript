@@ -10,8 +10,10 @@ while (!acertado) {
         alert("El número debe ser menor");
     } else if(numeroSecreto > numeroUsuario){
         alert("El número debe ser mayor")
-    } else{
+    } else if(numeroSecreto == numeroUsuario){
         alert("¡ACERTASTE!");
         acertado = true;
+    } else{
+        alert("NO has introducido un valor correcto");
     }
 }
